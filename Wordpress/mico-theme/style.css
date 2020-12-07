@@ -1,0 +1,160 @@
+/*
+Theme Name: Mico Theme
+Theme URI:
+Author:
+Author URI:
+Description:
+Version: 0.1
+Tags:
+Text Domain:
+*/
+body, p, h1, h2, h3, h4, h5, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: #fff;
+  background-image: url("inspiration-geometry.png");
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.content-container {
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+}
+
+.navigation-bar {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#89d2ed+0,2faefc+100 */
+  background: #89d2ed;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #89d2ed 0%, #2faefc 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #89d2ed 0%, #2faefc 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #89d2ed 0%, #2faefc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#89d2ed', endColorstr='#2faefc', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  position: absolute;
+  z-index: 100;
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 1.3em;
+}
+
+.navigation-bar a {
+  display: inline-block;
+  margin: 20px;
+  margin-right: 0;
+  padding-right: 20px;
+  border-right: 1px solid #FFF;
+  color: #FFF;
+}
+
+.navigation-bar a:last-child {
+  border: 0;
+}
+
+.content-area {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.load-more {
+  background-position: center;
+  transition: background 0.8s;
+}
+.load-more:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.load-more:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+/* Button style */
+div.load-more {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: #2196f3;
+  outline: none;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+}
+
+input.load-more {
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: #2196f3;
+  outline: none;
+  text-align: center;
+  margin: auto;
+}
+
+.worker-search {
+  border: 1px solid #2196f3;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+  width: 90%;
+  font-size: 16px;
+  cursor: text;
+  padding: 9px;
+  color: #2196f3;
+}
+
+.worker-search-results {
+  border: 1px solid #2196f3;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.float-two {
+  float: left;
+  width: 50%;
+}
+
+.clearboth {
+  clear: both;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

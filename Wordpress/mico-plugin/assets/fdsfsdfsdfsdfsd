@@ -1,0 +1,41 @@
+<?php
+
+function mico_shortcode_handler( $atts ) {
+    $atts = array_change_key_case((array)$atts, CASE_LOWER);
+
+    $a = shortcode_atts(
+        array(
+                'post_type' => 'employee',
+                'posts_per_page' => 5,
+                // 'category' => '',
+              ),
+              $atts
+        );
+
+    // The Query
+    $the_query = new WP_Query( $a );
+    // var_dump($the_query);
+
+    // The Loop
+    if ( $the_query->have_posts() ) {
+        ob_start();
+    	while ( $the_query->have_posts() ) {
+    		$the_query->the_post();
+            $postMeta = get_post_meta(get_the_id(), 'contact', true);
+
+            ?>
+            <p> <?php the_title(); ?> </p>
+            <p> <?php echo $postMeta['email']; ?> </p>
+            <?php
+            var_dump( $postMeta );
+    	}
+        return ob_get_clean();
+    	/* Restore original Post Data */
+    	wp_reset_postdata();
+    } else {
+    	// no posts found
+    }
+}
+
+add_shortcode( 'myshortcode', 'mico_shortcode_handler' );
+?>

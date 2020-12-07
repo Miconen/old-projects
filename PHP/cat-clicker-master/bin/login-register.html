@@ -1,0 +1,18 @@
+<button class="button-style button-login">Login</button>
+<button class="button-style button-register">Register</button>
+<script>
+  $(".button-login").click(function() {
+    $('.content').fadeOut('fast', function() {
+      $(".content").load("bin/login.html", function() {
+        $('.content').fadeIn('fast');
+      });
+    });
+  });
+  $(".button-register").click(function() {
+    $('.content').fadeOut('fast', function() {
+      $(".content").load("bin/register.html", function() {
+        $('.content').fadeIn('fast');
+      });
+    });
+  });
+</script>

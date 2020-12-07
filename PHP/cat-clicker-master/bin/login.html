@@ -1,0 +1,18 @@
+<form class="" action="index.php" method="post">
+  <p class="form-title">Username</p>
+  <input type="text" name="login_username" value="">
+  <p class="form-title">Password</p>
+  <input type="password" name="login_password" value="">
+  <div class="clear"></div>
+  <input class="button-style" type="submit" name="login-submit" value="Login">
+</form>
+<button class="button-style button-login-register">Back</button>
+<script>
+  $(".button-login-register").click(function() {
+    $('.content').fadeOut('fast', function() {
+      $(".content").load("bin/login-register.html", function() {
+        $('.content').fadeIn('fast');
+      });
+    });
+  });
+</script>

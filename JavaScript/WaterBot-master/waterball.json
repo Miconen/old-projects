@@ -1,0 +1,30 @@
+{
+    "positive": {
+        "0": "Signs point to yes.",
+        "1": "It is certain.",
+        "2": "It is decidedly so.",
+        "3": "Without a doubt.",
+        "4": "Yes definitely.",
+        "5": "You may rely on it.",
+        "6": "As I see it, yes.",
+        "7": "Most likely.",
+        "8": "Outlook good.",
+        "9": "Yes."
+    },
+    "non_committal": {
+        "0": "Concentrate and ask again.",
+        "1": "Reply hazy try again.",
+        "2": "Ask me if i care.",
+        "3": "Ask again later.",
+        "4": "Better not tell you now.",
+        "5": "Cannot predict now."
+    },
+    "negative": {
+        "0": "Very doubtful.",
+        "1": "You wish.",
+        "2": "Don't count on it.",
+        "3": "My reply is no.",
+        "4": "My sources say no.",
+        "5": "Outlook not so good."
+    }
+}

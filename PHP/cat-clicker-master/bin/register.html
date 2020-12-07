@@ -1,0 +1,23 @@
+<form class="" action="index.php" method="post">
+  <p class="form-title">Username</p>
+  <input type="text" name="register_username" value="">
+  <p class="form-title">Password</p>
+  <input type="password" name="register_password" value="">
+  <p class="form-title">Email</p>
+  <input type="email" name="register_email" value="">
+  <div class="clear"></div>
+  <input class="button-style" type="submit" name="register-submit" value="Register">
+</form>
+<button class="button-style button-login-register">Back</button>
+<script>
+  $(".button-login-register").click(function()
+  {
+    $('.content').fadeOut('fast', function()
+    {
+      $(".content").load("bin/login-register.html", function()
+      {
+        $('.content').fadeIn('fast');
+      });
+    });
+  });
+</script>

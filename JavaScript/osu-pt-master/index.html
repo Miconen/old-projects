@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>osu! PT</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="formMapId">Map ID</label>
+                <input type="text" class="form-control" id="formMapId" placeholder="Map ID" value="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="formApiKey">API Key</label>
+                <input type="password" class="form-control" id="formApiKey" value="" placeholder="API Key">
+            </div>
+            <div class="form-group col-md-12">
+                <input onclick="inputHandler()" type="button" value="Get map data" id="formSubmit" class="btn btn-primary btn-block">
+            </div>
+        </div>
+        <!-- Maps get added here -->
+        <div id="elementMapContainer"></div>
+    </div>
+</body>
+<script src="js/osuApiCall.js" charset="utf-8"></script>
+<script src="js/master.js" charset="utf-8"></script>
+
+</html>

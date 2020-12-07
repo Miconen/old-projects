@@ -1,0 +1,69 @@
+html, body {
+  background-color: #2B303A;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+p .currencyValue {
+  font-size: 5em;
+}
+
+.navbar {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul, .navbar ul a, .navbar ul a li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+.width-50 {
+  padding: 0;
+  margin: 0;
+  padding-top: 5px;
+  float: left;
+  list-style-type: none;
+  text-decoration: none;
+  width: 50%;
+}
+
+.width-50 ul, .width-50 ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.width-50 .button-style {
+  width: 100%;
+}
+
+.width-50 .button-style p {
+  margin: 0;
+  padding: 0;
+}
+
+.clear-both {
+  clear: both;
+}
+
+#upgrades-active li {
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
+#upgrades-passive li {
+  background-color: rgba(0, 0, 255, 0.25);
+}
